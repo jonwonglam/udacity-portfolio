@@ -1,0 +1,220 @@
+body {
+  margin-bottom: 0;
+}
+
+.container {
+  font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #131313;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  display: inline-block;
+  color: #131313;
+}
+
+a:hover {
+  color: #131313;
+  text-decoration: none;
+}
+
+div {
+  outline-color: red;
+  outline-style: solid;
+  outline-width: 0px;
+}
+
+/*
+ *
+ * Header and Nav CSS
+ *
+ */
+ .header {
+   margin-top: 50px;
+ }
+
+ .logo {
+   display: inline;
+   font: 20px 'Helvetica Neue';
+   font-weight: 800;
+   letter-spacing: 1px;
+   padding-bottom: 2px;
+   border-bottom: 3px solid #131313;
+ }
+
+ .nav {
+   display: flex;
+   align-items: center;
+ }
+
+.nav-item {
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  opacity: 0.6;
+  margin-right: 40px;
+  text-transform: uppercase;
+}
+
+/*
+ *
+ * Hero CSS
+ *
+ */
+.hero {
+  margin-top: 190px;
+}
+
+.hero-title {
+  font-size: 80px;
+  font-weight: 800;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.hero-subtitle {
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: -1px;
+  line-height: 0.9em;
+}
+
+.line-separator {
+  height: 3px;
+  min-width: 150px;
+  width: 20%;
+  background: #131313;
+}
+
+/*
+ *
+ * Feature CSS
+ *
+ */
+.section-title {
+  font-family: 'Lato';
+  font-size: 50px;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.feature {
+  margin-top: 50px;
+}
+
+.feature-image {
+  width: 90%;
+  height: auto;
+  transition: 0.15s ease-in all;
+}
+  .feature-image:hover {
+    opacity: 0.85;
+  }
+
+.feature-title {
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 15px;
+}
+
+.feature-caption {
+  font-size: 17px;
+  line-height: 1.5em;
+}
+
+.action-btn {
+  background: none;
+  border: 1px solid #131313;
+  border-radius: 50px;
+  cursor: pointer;
+  font-family: 'Lato';
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 8px 25px;
+  transition: 0.15s ease-in all;
+}
+
+  .action-btn:hover {
+    color: #fff;
+    background: #131313;
+  }
+
+  .action-btn:focus {
+    outline: 0;
+  }
+
+/*
+ *
+ * Footer CSS
+ *
+ */
+ footer {
+   width: 100%;
+   background: #ededed;
+   margin-top: 200px;;
+   margin-bottom: 0;
+ }
+
+ .footer-caption {
+   display: block;
+   text-align: center;
+   height: 60px;
+   order: 1;
+   vertical-align: center;
+   padding-top: 25px;
+ }
+
+/*
+ *
+ * Helper Classes CSS
+ *
+ */
+.vertical-align {
+  display: flex;
+  align-items: center;
+}
+
+.align-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.align-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.margin-lg {
+  margin-top: 250px;
+  margin-bottom: 50px;
+}
+
+.margin-sm {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.margin-left-md {
+  margin-left: 100px;
+
+}
+
+.underline:after {
+  display: none;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background: #131313;
+  margin-top: -2px;
+}
+
+.underline:hover:after {
+  display: block;
+}
