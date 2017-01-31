@@ -115,9 +115,7 @@ div {
  *
  */
 .section-title {
-  font-family: "Lato";
-  font-size: 50px;
-  font-weight: 300;
+  font: 300 50px "Lato";
   letter-spacing: 4px;
   text-transform: uppercase;
 }
@@ -153,7 +151,7 @@ div {
   border: 1px solid #131313;
   border-radius: 50px;
   cursor: pointer;
-  font: "Lato" 18px 300;
+  font: 300 18px "Lato";
   letter-spacing: 1px;
   padding: 8px 25px;
   -webkit-transition: 0.15s ease-in all;
