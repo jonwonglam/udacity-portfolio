@@ -12,14 +12,15 @@ module.exports = function(grunt) {
     autoprefixer: {
             dist: {
                 files: {
-                    'build/main.css': 'css/main.css'
+                    'build/main.css': 'css/main.css',
+                    'build/responsive.css': 'css/responsive.css'
                 }
             }
         },
 
     watch: {
                 styles: {
-                    files: ['css/main.css'],
+                    files: ['css/main.css', 'css/responsive.css'],
                     tasks: ['autoprefixer']
                 }
             },

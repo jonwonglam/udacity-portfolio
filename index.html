@@ -6,23 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="build/main.css">
+    <link rel="stylesheet" href="build/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,900" rel="stylesheet">
   </head>
   <body>
+    <nav class="sidebar">
+      <ul class="sidebar-list">
+        <li class="sidebar-item">×</li>
+        <li><a class="sidebar-item" href="#">Work</a></li>
+        <li><a class="sidebar-item" href="#">About</a></li>
+        <li><a class="sidebar-item" href="#">Blog</a></li>
+      </ul>
+    </nav>
     <div class="container">
       <div class="row header vertical-align">
-        <div class="col-md-2">
+        <div class="col-2">
           <svg id="logo" data-name="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92.6 103.06"><defs><style>.cls-1{fill:none;stroke:#231f20;stroke-miterlimit:10;stroke-width:6px;}.cls-2{fill:#231f20;}</style></defs><title>logo</title><g id="_Group_" data-name="&lt;Group&gt;"><g id="_Group_2" data-name="&lt;Group&gt;"><path class="cls-1" d="M108.16,288.89a9.61,9.61,0,0,1,4.33-7.5l34.64-20a9.61,9.61,0,0,1,8.66,0l34.64,20a9.61,9.61,0,0,1,4.33,7.5v40a9.61,9.61,0,0,1-4.33,7.5l-34.64,20a9.61,9.61,0,0,1-8.66,0l-34.64-20a9.61,9.61,0,0,1-4.33-7.5v-40Z" transform="translate(-105.16 -257.36)"/></g><g id="_Group_3" data-name="&lt;Group&gt;"><path class="cls-2" d="M140.16,321.84a9.2,9.2,0,0,0,3,3.41,6.67,6.67,0,0,0,3.64,1.07,5.47,5.47,0,0,0,4.48-1.82q1.49-1.82,1.5-6.37V289.6h7.54v29.18a20.4,20.4,0,0,1-.72,5.49,12.19,12.19,0,0,1-2.27,4.48,10.87,10.87,0,0,1-4,3,13.61,13.61,0,0,1-5.72,1.1,14.68,14.68,0,0,1-7.57-1.82,14.1,14.1,0,0,1-5.1-5.4Z" transform="translate(-105.16 -257.36)"/></g></g></svg>          <!-- <p class="logo main">JWL</p> -->
         </div>
-        <div class="col-md-7">
+        <div class="col-7 nav">
           <ul class="nav navbar-default fade-in">
             <li><a class="nav-item" href="#">Work</a></li>
             <li><a class="nav-item" href="#">About</a></li>
             <li><a class="nav-item" href="#">Blog</a></li>
           </ul>
         </div>
-        <div class="col-md-3 align-right fade-in">
-          <a class="nav-action" href="#">Get in touch</a>
+        <div class="col-3 nav align-right fade-in">
+          <a class="nav nav-action" href="#">Get in touch</a>
+        </div>
+        <div class="col-10 align-right">
+          <span id="nav-menu">&#9776;</span>
         </div>
       </div>
       <div class="row">
@@ -95,5 +107,18 @@
         </div>
       </div>
     </footer>
+    <script type="text/javascript">
+      var menu = document.querySelector('#nav-menu');
+      var main = document.querySelector('.container');
+      var drawer = document.querySelector('.sidebar');
+
+      menu.addEventListener('click', function(e) {
+        drawer.classList.toggle('open');
+        e.stopPropagation();
+      });
+      main.addEventListener('click', function() {
+        drawer.classList.remove('open');
+      });
+    </script>
   </body>
 </html>

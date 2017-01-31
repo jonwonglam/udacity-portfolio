@@ -17,7 +17,7 @@ a:hover {
 }
 
 div {
-  outline: 1px #fe000e solid;
+  outline: 0px #fe000e solid;
 }
 
 /*
@@ -26,7 +26,7 @@ div {
  *
  */
  .header {
-   margin-top: 7vh;
+   padding-top: 7vh;
  }
 
 #logo {
@@ -35,23 +35,14 @@ div {
   opacity: 0.9;
 }
 
- .logo {
-   display: inline;
-   font: 20px 'Helvetica Neue';
-   font-weight: 800;
-   letter-spacing: 1px;
-   padding-bottom: 2px;
-   border-bottom: 3px solid #131313;
- }
-
- .nav {
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   -webkit-box-align: center;
-       -ms-flex-align: center;
-           align-items: center;
- }
+.nav {
+ display: -webkit-box;
+ display: -ms-flexbox;
+ display: flex;
+ -webkit-box-align: center;
+     -ms-flex-align: center;
+         align-items: center;
+}
 
 .nav-item {
   font-size: 13px;
@@ -60,8 +51,8 @@ div {
   opacity: 0.6;
   margin-right: 40px;
   text-transform: uppercase;
-  -webkit-transition: 0.15s ease-in all;
-          transition: 0.15s ease-in all;
+  -webkit-transition: 0.15s ease-in opacity;
+          transition: 0.15s ease-in opacity;
 }
 
 .nav-item:hover {
@@ -138,8 +129,8 @@ div {
 .feature-image {
   width: 90%;
   height: auto;
-  -webkit-transition: 0.15s ease-in all;
-          transition: 0.15s ease-in all;
+  -webkit-transition: 0.15s ease-in opacity;
+          transition: 0.15s ease-in opacity;
 }
   .feature-image:hover {
     opacity: 0.85;
